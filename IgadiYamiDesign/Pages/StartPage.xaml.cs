@@ -6,4 +6,9 @@ public partial class StartPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void GetStarted_Clicked(object sender, EventArgs e)
+    {
+		Navigation.PushModalAsync(new SignupPage());
+    }
 }
