@@ -4,11 +4,7 @@
              x:Class="IgadiYamiDesign.Pages.SignupPage"
              Title="Sign Up"
              BackgroundColor="#006838">
-    <ContentPage.Resources>
-        <Style x:Key="InvalidEntryStyle" TargetType="Entry">
-            <Setter Property="TextColor" Value="Red" />
-        </Style>
-    </ContentPage.Resources>
+    
     <VerticalStackLayout Padding="10">
         <Label Padding="20"
                
