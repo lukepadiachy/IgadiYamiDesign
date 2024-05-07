@@ -59,6 +59,10 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\montserrat.ttf" />
 	  <None Remove="Resources\Images\igadiimage.png" />
+	  <None Remove="Resources\Images\pic1.jpg" />
+	  <None Remove="Resources\Images\pic2.jpg" />
+	  <None Remove="Resources\Images\pic3.jpg" />
+	  <None Remove="Resources\Images\plants-and-soil-gardening-mmjz9lw2svzxkz2d.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -68,6 +72,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\MainMenu.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\SignupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
