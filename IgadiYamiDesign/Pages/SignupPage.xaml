@@ -9,6 +9,7 @@
         <Label Padding="20"
                
             Text="Create New Account"
+               FontFamily="mont"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
             TextColor="White"
@@ -17,23 +18,24 @@
         <StackLayout Padding="10" Spacing="10" >
 
             <Frame Padding="5" BackgroundColor="#F9FFE0">
-            <Entry Placeholder="Name" PlaceholderColor="Black"/>
+            <Entry FontFamily="mont" Placeholder="Name" PlaceholderColor="Black"/>
         </Frame>
 
             <Frame Padding="5" BackgroundColor="#F9FFE0" >
-            <Entry Placeholder="Surname" PlaceholderColor="Black"/>
+                <Entry FontFamily="mont" Placeholder="Surname" PlaceholderColor="Black"/>
         </Frame>
 
             <Frame Padding="5" BackgroundColor="#F9FFE0" >
-        <Entry Placeholder="Email Address/Phone Number" PlaceholderColor="Black"/>
+                <Entry FontFamily="mont" Placeholder="Email Address/Phone Number" PlaceholderColor="Black"/>
         </Frame>
 
             <Frame Padding="5" BackgroundColor="#F9FFE0">
-            <Entry Placeholder="Password" PlaceholderColor="Black"/>
+                <Entry FontFamily="mont" Placeholder="Password" PlaceholderColor="Black"/>
         </Frame>
         <Label 
             Text="Already Have a Account? Login In"
             FontAttributes="Bold"
+            FontFamily="mont"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             TextColor="White"/>

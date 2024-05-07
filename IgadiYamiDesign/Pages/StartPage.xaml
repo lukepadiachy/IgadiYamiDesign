@@ -6,9 +6,9 @@
              Title="StartPage">
     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20" Padding="30">
         <Image Source="igadiimage.png" HeightRequest="200" WidthRequest="200"/>
-        <Label Text="Welcome to Igadi Yami" FontSize="Large" TextColor="#55833D" />
-        <Label Text="Your personal gardening partner, here to hold your hand and walk you through your gardening" FontSize="Small" TextColor="#55833D" />
-        <Button Text="Get Started" BackgroundColor="#55833D" TextColor="White" WidthRequest="200" HeightRequest="50" Margin="0,20,0,0" 
+        <Label FontFamily="mont" HorizontalOptions="Center" Text="Welcome to Igadi Yami" FontSize="Large" TextColor="#55833D" />
+        <Label FontFamily="mont" HorizontalOptions="Fill" Text="Your personal gardening partner, here to hold your hand and walk you through your gardening" FontSize="Small" TextColor="#55833D" />
+        <Button Text="Get Started" FontFamily="mont" BackgroundColor="#55833D" TextColor="White" WidthRequest="200" HeightRequest="50" Margin="0,20,0,0" 
                 Clicked="GetStarted_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
