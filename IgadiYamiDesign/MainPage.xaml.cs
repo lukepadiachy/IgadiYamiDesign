@@ -1,25 +1,51 @@
-﻿namespace IgadiYamiDesign
+﻿using IgadiYamiDesign.Modelss.Carrot;
+using IgadiYamiDesign.Servicess;
+using System.Collections.ObjectModel;
+
+namespace IgadiYamiDesign
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        private PlantDatabase _database;
+
+        private string _displaydiseasename;
+
+        public string DisplayDiseaseName
+        {
+            get { return _displaydiseasename; }
+            set { _displaydiseasename = value; }
+        }
+
+
+        private Carrot _carrot;
+        public Carrot CarrotInfo
+        {
+            get { return _carrot; }
+            set { _carrot = value; }
+        }
+
 
         public MainPage()
         {
             InitializeComponent();
+            _database = new PlantDatabase();
+            BindingContext = this;
         }
-
-        private void OnCounterClicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            count++;
+            base.OnAppearing();
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+            LoadData();
+        }
+        public void LoadData()
+        {
+            CarrotInfo = _database.GetCarrotInformation();
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            string test = "Carrot Rust Fly";
+            CarrotDisease carrotrustfly = _database.GetCarrotDiseaseByName(test);
+            DisplayDiseaseName = carrotrustfly.DiseaseName;
+            // Returns a list from the database with all data and displays in one the screen
+            //CartItems = new ObservableCollection<ShoppingCart>(_database.GetAllCartItems());
         }
     }
-
 }
