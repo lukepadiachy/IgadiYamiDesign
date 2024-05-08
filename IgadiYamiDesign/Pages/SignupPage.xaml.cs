@@ -8,4 +8,8 @@ public partial class SignupPage : ContentPage
 
 
 	}
+    private void SignUp_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new LoginPage());
+    }
 }

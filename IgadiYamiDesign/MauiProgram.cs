@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls.PlatformConfiguration;
 
 namespace IgadiYamiDesign
 {
@@ -13,12 +14,12 @@ namespace IgadiYamiDesign
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    fonts.AddFont("montserrat.ttf", "mont"); 
+                    fonts.AddFont("montserrat.ttf", "mont");
 
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
