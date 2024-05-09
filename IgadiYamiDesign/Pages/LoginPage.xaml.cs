@@ -6,6 +6,9 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private void Login_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new TomatoeView());
+    }
 
-   
 }

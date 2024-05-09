@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IgadiYamiDesign.Pages.TomatoeView"
+             Title="tomato_view">
+
+
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="Aqua" Offset="0" />
+            <GradientStop Color="LightGreen" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout Padding="20" >
+        <Label 
+            TextDecorations="Underline"
+            Text=" Start Gardening with us"
+           FontAttributes="Bold"
+            FontSize="Small"
+            TextColor="White"
+            VerticalOptions="Start" 
+            HorizontalOptions="StartAndExpand" />
+        <Frame Margin="0,330,0,0" CornerRadius="20" WidthRequest="400" HeightRequest="500" BackgroundColor="#C42D09">
+
+            <FlexLayout Direction="Row" JustifyContent="SpaceEvenly" >
+            
+                <Button Text="How to plant Tomatoes" BackgroundColor="#006838" VerticalOptions="End"  HorizontalOptions="Center" FontSize="Micro" WidthRequest="70" HeightRequest="50" />
+                <Button Text="Button 2" BackgroundColor="#006838" WidthRequest="70" HeightRequest="50"  />
+                <Button Text="Button 3" BackgroundColor="#579602"  WidthRequest="70" HeightRequest="50"  />
+                <Button Text="Button 4" BackgroundColor="#006838"   WidthRequest="70" HeightRequest="50" />
+                <Button Text="Button 5" BackgroundColor="#006838" WidthRequest="70" HeightRequest="50"  />
+            </FlexLayout>
+        </Frame>
+
+       
+    </VerticalStackLayout>
+
+</ContentPage>

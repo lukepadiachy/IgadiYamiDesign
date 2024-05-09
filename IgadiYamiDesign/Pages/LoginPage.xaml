@@ -14,11 +14,11 @@
         <StackLayout Padding="10" Spacing="1" >
 
             <Frame CornerRadius="10" WidthRequest="330" HeightRequest="60" Padding="5" Margin="10" BackgroundColor="#006838">
-                <Entry FontFamily="mont" FontSize="15" Placeholder="Email Address" FontAttributes="Bold" PlaceholderColor="#F9FFE0"/>
+                <Entry FontFamily="mont"  FontSize="15" Placeholder="Email Address" FontAttributes="Bold" PlaceholderColor="#F9FFE0"/>
             </Frame>
 
             <Frame CornerRadius="10"  WidthRequest="330"  Padding="8" HeightRequest="60" Margin="10" BackgroundColor="#006838" >
-                <Entry FontFamily="mont"  FontSize="15" FontAttributes="Bold" Placeholder="Surname" PlaceholderColor="#F9FFE0"/>
+                <Entry FontFamily="mont"   FontSize="15" FontAttributes="Bold" Placeholder="Surname" PlaceholderColor="#F9FFE0"/>
             </Frame>
             <Button 
                 Text="Login" 
@@ -30,7 +30,7 @@
                 CornerRadius="90" 
                 WidthRequest="200" 
                 HeightRequest="50"
-                Margin="0,30,0,0"  />
+                Margin="0,30,0,0" Clicked="Login_Clicked" />
 
             <Label Padding="0,180,0,0" 
           Text="Forgot Your Password?"

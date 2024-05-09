@@ -63,6 +63,7 @@
 	  <None Remove="Resources\Images\pic2.jpg" />
 	  <None Remove="Resources\Images\pic3.jpg" />
 	  <None Remove="Resources\Images\plants-and-soil-gardening-mmjz9lw2svzxkz2d.jpg" />
+	  <None Remove="Resources\Images\tomatoe.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -78,6 +79,9 @@
 	  <Compile Update="Pages\LoginPage.xaml.cs">
 	    <DependentUpon>LoginPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Pages\TomatoeView.xaml.cs">
+	    <DependentUpon>TomatoeView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -91,6 +95,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\StartPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\TomatoeView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
