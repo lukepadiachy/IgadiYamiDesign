@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IgadiYamiDesign.Pages.TomatoeView"
-             Title="tomato_view" BackgroundImageSource="tomatoe.png">
+             Title="tomato_view">
 
 
    
@@ -16,7 +16,7 @@
             TextColor="White"
             VerticalOptions="Start" 
             HorizontalOptions="StartAndExpand" />
-        <Frame Margin="0,330,0,0" CornerRadius="20" WidthRequest="400" HeightRequest="00" BackgroundColor="#C42D09">
+        <Frame Margin="0,330,0,0" CornerRadius="20" WidthRequest="400" HeightRequest="500" BackgroundColor="#C42D09">
 
             <FlexLayout Direction="Row" JustifyContent="SpaceEvenly" >
             
