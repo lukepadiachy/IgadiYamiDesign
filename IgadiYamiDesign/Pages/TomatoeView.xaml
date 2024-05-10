@@ -5,30 +5,37 @@
              Title="tomato_view">
 
 
-   
-
     <VerticalStackLayout Padding="20" >
         <Label 
             TextDecorations="Underline"
             Text=" Start Gardening with us"
-           FontAttributes="Bold"
+            FontAttributes="Bold"
             FontSize="Small"
             TextColor="White"
             VerticalOptions="Start" 
             HorizontalOptions="StartAndExpand" />
-        <Frame Margin="0,330,0,0" CornerRadius="20" WidthRequest="400" HeightRequest="500" BackgroundColor="#C42D09">
+        <Grid Margin="20,35,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Frame   BackgroundColor="#C42D09">
 
-            <FlexLayout Direction="Row" JustifyContent="SpaceEvenly" >
-            
-                <Button Text="How to plant Tomatoes" BackgroundColor="#006838" VerticalOptions="End"  HorizontalOptions="Center" FontSize="Micro" WidthRequest="70" HeightRequest="50" />
-                <Button Text="Button 2" BackgroundColor="#006838" WidthRequest="70" HeightRequest="50"  />
-                <Button Text="Button 3" BackgroundColor="#579602"  WidthRequest="70" HeightRequest="50"  />
-                <Button Text="Button 4" BackgroundColor="#006838"   WidthRequest="70" HeightRequest="50" />
-                <Button Text="Button 5" BackgroundColor="#006838" WidthRequest="70" HeightRequest="50"  />
-            </FlexLayout>
-        </Frame>
+                <FlexLayout Direction="Row" JustifyContent="SpaceEvenly" >
+                      
+                    <Button Text="How to plant Tomatoes" BackgroundColor="#006838" VerticalOptions="End" LineBreakMode="WordWrap"  HorizontalOptions="Center" FontSize="10" WidthRequest="70" HeightRequest="50" />
+                    <Button Text="Button 2" BackgroundColor="#006838" WidthRequest="70" HeightRequest="50"  />
+                    <Button Text="Button 3" BackgroundColor="#579602"  WidthRequest="70" HeightRequest="50"  />
+                    <Button Text="Button 4" BackgroundColor="#006838"   WidthRequest="70" HeightRequest="50" />
+                    <Button Text="Button 5" BackgroundColor="#006838" WidthRequest="70" HeightRequest="50"  />
+                          
+                         
+                </FlexLayout>
+                    
+            </Frame>
+        </Grid>
 
-       
+
     </VerticalStackLayout>
 
 </ContentPage>
