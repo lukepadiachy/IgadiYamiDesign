@@ -64,6 +64,7 @@
 	  <None Remove="Resources\Images\pic3.jpg" />
 	  <None Remove="Resources\Images\plants-and-soil-gardening-mmjz9lw2svzxkz2d.jpg" />
 	  <None Remove="Resources\Images\tomatoe.jpg" />
+	  <None Remove="Resources\Images\tomatoes.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

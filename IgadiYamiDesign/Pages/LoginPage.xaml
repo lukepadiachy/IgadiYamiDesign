@@ -4,10 +4,10 @@
              x:Class="IgadiYamiDesign.Pages.LoginPage"
              Title="LoginPage"
              BackgroundColor="#FFFFFF">
-   
-    
-    
-    <VerticalStackLayout Padding="0,100,0,30">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,100,0,30">
         
         <Image Source="igadiimage.png"   HeightRequest="200" WidthRequest="200" />
         <Label  />
@@ -43,4 +43,5 @@
       
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
