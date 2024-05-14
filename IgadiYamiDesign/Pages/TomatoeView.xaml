@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IgadiYamiDesign.Pages.TomatoeView"
-             Title="tomato_view"
+             Title="Start Gardening with us"
              BackgroundColor="#C42D09">
 
-
+    
     <Grid >
         <Grid.RowDefinitions >
 
@@ -18,10 +18,10 @@
 
         </Grid.RowDefinitions>
         <Image Grid.Row="0" Grid.RowSpan="3" Source="tomatoes.jpg" Aspect="AspectFill" />
-        <Label TextDecorations="Underline" Padding="20,25,0,0" FontSize="18" FontFamily="mont" FontAttributes="Bold" TextColor="White" Text="Star Gardening with us" Grid.Row="0"  />
-
-        <Label  Margin="15,3,0,0" Text="Tomatoes" FontAttributes="Bold" TextColor="White" FontSize="40" FontFamily="Alfa Slab One" Grid.Row="1" VerticalOptions="EndAndExpand" />
-        <Label Margin="15,0,0,0" Text="Start your Gardening journey With Us" FontAttributes="Bold" TextColor="White" FontSize="10" FontFamily="mont" Grid.Row="2" />
+        <Label Padding="25,25,0,0" Text="Start Gardening with us" FontSize="18" FontFamily="mont" FontAttributes="Bold" TextColor="White" Grid.Row="0"  />
+        <BoxView Grid.Row="0" HorizontalOptions="Center" Margin="20,0,60,200" BackgroundColor="White" WidthRequest="300" HeightRequest="1" />
+        <Label  Margin="25,3,0,0" Text="Tomatoes" FontAttributes="Bold" TextColor="White" FontSize="40" FontFamily="Alfa Slab One" Grid.Row="1" VerticalOptions="EndAndExpand" />
+        <Label Margin="30,0,0,0" Text="Start your Gardening journey With us" FontAttributes="Bold" TextColor="White" FontSize="11" FontFamily="mont" Grid.Row="2" />
 
 
         <Frame Grid.Row="3" BackgroundColor="#C42D09" WidthRequest="420" HeightRequest="170" Padding="0,0,15,0" CornerRadius="49" >

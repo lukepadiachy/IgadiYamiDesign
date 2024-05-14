@@ -4,6 +4,7 @@ public partial class TomatoeView : ContentPage
 {
     public TomatoeView()
 	{
-		InitializeComponent();
+        Title = "Satrt Gardening with us";
+        InitializeComponent();
 	}
 }
