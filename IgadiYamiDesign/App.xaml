@@ -5,10 +5,22 @@
              x:Class="IgadiYamiDesign.App">
     <Application.Resources>
         <ResourceDictionary>
+
+            <!-- Light mode resources -->
+            <ResourceDictionary x:Key="LightTheme">
+                <Color x:Key="PageBackgroundColor">#F5F8D9</Color>
+                <!-- Add other light theme colors here -->
+            </ResourceDictionary>
+
+            <!-- Dark mode resources -->
+            <ResourceDictionary x:Key="DarkTheme">
+                <Color x:Key="PageBackgroundColor">#2C2C2C</Color>
+                <!-- Add other dark theme colors here -->
+            </ResourceDictionary>
+
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

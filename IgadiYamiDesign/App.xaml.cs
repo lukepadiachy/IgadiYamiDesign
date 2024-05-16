@@ -8,7 +8,11 @@ namespace IgadiYamiDesign
         {
             InitializeComponent();
 
+            // Set the theme based on system settings
+            App.Current.UserAppTheme = App.Current.RequestedTheme;
+
             MainPage = new TomatoeView();
+            MainPage = new NavigationPage(new AboutUs());
         }
     }
 }
