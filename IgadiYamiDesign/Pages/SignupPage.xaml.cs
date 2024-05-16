@@ -7,8 +7,14 @@ public partial class SignupPage : ContentPage
 		InitializeComponent();
 
 
-	}
+    }
     private void SignUp_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new LoginPage());
+    }
+
+
+    private void Login_Clicked(object sender, EventArgs e)
     {
         Navigation.PushModalAsync(new LoginPage());
     }

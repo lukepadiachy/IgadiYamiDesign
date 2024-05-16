@@ -3,59 +3,86 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IgadiYamiDesign.Pages.SignupPage"
              Title="Sign Up"
-             BackgroundColor="#006838">
+            BackgroundColor="#006838">
 
+    
+    
+    
+    
     <ScrollView>
-    <VerticalStackLayout  Padding="30" Spacing="3">
-       
-            <Label Padding="0,90,0,15"
-               
-            Text="Create New Account"
+
+        
+
+
+            <VerticalStackLayout  Padding="30" >
+            <Grid>
+
+                <Grid.RowDefinitions >
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                  
+                </Grid.RowDefinitions>
+                <Label Margin="10,0,0,0" Text="Sign Up" FontAttributes="Bold" TextColor="White" FontSize="30" FontFamily="mont" Grid.Row="0" />
+
+                <BoxView Grid.Row="0" HeightRequest="1" BackgroundColor="White" Margin="10,60,0,0" />
+                <Label Margin="0,50,0,20" Padding="0, 50,0,0" Grid.Row="1"  
+
+               Text="Create New Account"
                FontFamily="mont"
-               FontAttributes="Bold"    
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            TextColor="White"
-               FontSize="20"
-               />
-        <StackLayout  Orientation="Vertical" Padding="10" Spacing="1" >
+                   FontAttributes="Bold"    
+                 VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                 TextColor="White"
+                  FontSize="20"
+                  />
 
-            <Frame HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CornerRadius="15" Padding="5" Margin="10" BackgroundColor="#F9FFE0">
-                <Entry FontFamily="mont" TextColor="Black"  FontSize="15" Placeholder="Full Name" PlaceholderColor="#A6A6A6"/>
+          
+                
+
+
+           
+        <StackLayout  Grid.Row="2" Margin="0,1,0,0"  Orientation="Vertical" Padding="10" Spacing="1" >
+            
+            <Frame HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CornerRadius="40" Padding="5" Margin="10" BackgroundColor="#F9FFE0">
+                <Button FontFamily="mont" TextColor="Black"  FontSize="15" BackgroundColor="Transparent"/>
+                       
+                    </Frame>
+
+            <Frame CornerRadius="40" Padding="5" Margin="10" BackgroundColor="#F9FFE0" >
+                        <Button FontFamily="mont" FontSize="15" BackgroundColor="#F9FFE0" TextColor="Black"  />
         </Frame>
 
-            <Frame CornerRadius="15" Padding="5" Margin="10" BackgroundColor="#F9FFE0" >
-                    <Entry FontFamily="mont" FontSize="15"  TextColor="Black" Placeholder="Surname" PlaceholderColor="#A6A6A6"/>
-        </Frame>
-
-            <Frame Padding="5" CornerRadius="15" Margin="10" BackgroundColor="#F9FFE0" >
-                    <Entry FontFamily="mont" FontSize="15" Placeholder="Email Address/Phone Number"  TextColor="Black" PlaceholderColor="#A6A6A6"/>
-        </Frame>
-
-            <Frame CornerRadius="15" Padding="5" Margin="10" BackgroundColor="#F9FFE0">
-                    <Entry FontFamily="mont" FontSize="15"  TextColor="Black" Placeholder="Password" PlaceholderColor="#A6A6A6"/>
-        </Frame>
+   
+                
 
 
-        <Frame CornerRadius="15" Padding="5" Margin="10" BackgroundColor="#F9FFE0">
-                    <Entry FontFamily="mont" FontSize="15" Placeholder="Confirm Password"  TextColor="Black" PlaceholderColor="#A6A6A6"/>
-        </Frame>
-
-            <Button  CornerRadius="40" Text="SIGN UP" FontAttributes="Bold" FontFamily="mont" BackgroundColor="#F9FFE0" TextColor="#006838" WidthRequest="200" HeightRequest="50" Margin="0,30,0,0" 
+                <Button  CornerRadius="40" Text="Create new account" FontAttributes="Bold" FontFamily="mont" BackgroundColor="#F9FFE0" TextColor="#006838" WidthRequest="300" HeightRequest="55" Margin="0,30,0,0" 
                   Clicked="SignUp_Clicked" />
 
 
         </StackLayout>
-        
-  
-            <Label Padding="0,110,0,0" 
+                <Button  Grid.Row="3" Margin="0,30"
+    Text="By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use."
+      FontAttributes="Bold"
+      FontSize="13"
+     LineBreakMode="WordWrap"
+                         BackgroundColor="Transparent"
+     TextColor="White"/>
+
+
+                <Button Background="Transparent" Grid.Row="4" Margin="0,150,0,0" 
                Text="Already Have a Account? Login In"
                  FontAttributes="Bold"
-                 FontFamily="mont"
+                 Clicked="Login_Clicked"
                   VerticalOptions="End" 
   
                  HorizontalOptions="Center"
                 TextColor="White"/>
-    </VerticalStackLayout>
+            </Grid>
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -8,7 +8,7 @@ namespace IgadiYamiDesign
         {
             InitializeComponent();
 
-            MainPage = new TomatoeView();
+            MainPage = new StartPage();
         }
     }
 }

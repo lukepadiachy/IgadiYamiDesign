@@ -58,7 +58,9 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\montserrat.ttf" />
+	  <None Remove="Resources\Images\google.png" />
 	  <None Remove="Resources\Images\igadiimage.png" />
+	  <None Remove="Resources\Images\microsoft.png" />
 	  <None Remove="Resources\Images\pic1.jpg" />
 	  <None Remove="Resources\Images\pic2.jpg" />
 	  <None Remove="Resources\Images\pic3.jpg" />
