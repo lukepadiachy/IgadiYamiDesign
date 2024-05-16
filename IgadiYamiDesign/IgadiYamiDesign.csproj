@@ -58,11 +58,17 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\montserrat.ttf" />
+	  <None Remove="Resources\Images\Bandile.png" />
+	  <None Remove="Resources\Images\Buhle.png" />
+	  <None Remove="Resources\Images\Chulu.png" />
+	  <None Remove="Resources\Images\Ethan.png" />
 	  <None Remove="Resources\Images\igadiimage.png" />
+	  <None Remove="Resources\Images\Luke.png" />
 	  <None Remove="Resources\Images\pic1.jpg" />
 	  <None Remove="Resources\Images\pic2.jpg" />
 	  <None Remove="Resources\Images\pic3.jpg" />
 	  <None Remove="Resources\Images\plants-and-soil-gardening-mmjz9lw2svzxkz2d.jpg" />
+	  <None Remove="Resources\Images\Simbonile.png" />
 	  <None Remove="Resources\Images\tomatoe.jpg" />
 	  <None Remove="Resources\Images\tomatoes.jpg" />
 	</ItemGroup>
@@ -86,6 +92,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\AboutUs.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\MainMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
