@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IgadiYamiDesign.Pages.SettingsPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start" Padding="20">
+
+            <!-- Profile Section -->
+            <Frame BackgroundColor="#FFFFFF" CornerRadius="20" Padding="20">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <!-- Profile Image -->
+                    <Image Source="profile_image_placeholder.png" WidthRequest="100" HeightRequest="100" />
+
+                    <!-- Name and Location -->
+                    <Label Text="Ndosi yogurt" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,10,0,0"/>
+                    <Label Text="Khayelitsha" FontSize="14" HorizontalTextAlignment="Center" Margin="0,0,0,10"/>
+
+                    <!-- Bio -->
+                    <Label Text="I love farming and gardens and plants and trees and leafs and crops with roots from seeds and stuff"
+                           FontSize="16"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Edit Profile Link -->
+            <Button Text="Edit profile" TextColor="Black" BackgroundColor="Transparent" Clicked="OnEditProfileClicked" />
+
+            <!-- Options -->
+            <VerticalStackLayout Spacing="10" HorizontalOptions="FillAndExpand" Margin="0,20,0,0">
+                <HorizontalStackLayout>
+                    <Label Text="Dark Mode" VerticalOptions="Center" />
+                    <Switch Toggled="OnDarkModeToggled" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+                <Button Text="Premium Tab" Clicked="OnPremiumTabClicked" />
+                <Button Text="FAQ (Chat bot)" Clicked="OnFAQClicked" />
+                <Button Text="Help (chat bot)" Clicked="OnHelpClicked" />
+                <Button Text="About us" Clicked="OnAboutUsClicked" />
+                <Button Text="Terms and Conditions" Clicked="OnTermsAndConditionsClicked" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
