@@ -97,6 +97,8 @@
                        TextColor="White"
                        HorizontalOptions="Center"
                        Margin="0,0,0,10" />
+            </Frame>
+            <Frame>
                 <Label Text="At iGadi Yami, our vision is to empower subsistence farmers for a sustainable future by addressing hunger through agriculture. We understand the challenges of South Africa's agricultural landscape and the critical role of subsistence farming in ensuring food security. However, these farmers face barriers to sustainability and prosperity. Our mission is clear: revolutionizing subsistence farming for a hunger-free future."
                        TextColor="White"
                        FontSize="16" />
