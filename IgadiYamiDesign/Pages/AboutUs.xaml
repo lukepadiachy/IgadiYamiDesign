@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IgadiYamiDesign.Pages.AboutUs"
+<<<<<<< HEAD
              BackgroundColor="White">
     
         <ScrollView >
@@ -12,20 +13,37 @@
 
                 <!-- Title -->
                   <Label Text="Meet the creators of Igadi Yami"
+=======
+             BackgroundColor="#F9FFE0">
+
+    <StackLayout Padding="20">
+        <!-- Title -->
+        <Label Text="Meet the creators of Igadi Yami"
+>>>>>>> c1d00ce92c043daf40563a905076f87703029851
                    FontSize="24"
+                   TextColor="#006838"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
                    VerticalOptions="Start"
                    Margin="0,20,0,20" />
 
+<<<<<<< HEAD
             <!-- Creators Section -->
                 
+=======
+        <!-- Creators Section -->
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Spacing="20">
+                <!-- Creator 1 -->
+>>>>>>> c1d00ce92c043daf40563a905076f87703029851
                 <StackLayout>
                     <Image Source="buhle.png"
                            HeightRequest="100"
                            WidthRequest="100"
                            HorizontalOptions="Center" />
-                    <Label Text="Buhle"
+                    <Label Text="Buhle" TextColor="#006838"
                            FontSize="18"
                            HorizontalOptions="Center" />
                 </StackLayout>
@@ -36,7 +54,7 @@
                            HeightRequest="100"
                            WidthRequest="100"
                            HorizontalOptions="Center" />
-                    <Label Text="Bandile"
+                    <Label Text="Bandile" TextColor="#006838"
                            FontSize="18"
                            HorizontalOptions="Center" />
                 </StackLayout>
@@ -47,29 +65,29 @@
                            HeightRequest="100"
                            WidthRequest="100"
                            HorizontalOptions="Center" />
-                    <Label Text="Chulumanco"
+                    <Label Text="Chulumanco" TextColor="#006838"
                            FontSize="18"
                            HorizontalOptions="Center" />
                 </StackLayout>
-                
+
                 <!-- Creator 4 -->
                 <StackLayout>
                     <Image Source="ethan.png"
                            HeightRequest="100"
                            WidthRequest="100"
                            HorizontalOptions="Center" />
-                    <Label Text="Ethan"
+                    <Label Text="Ethan" TextColor="#006838"
                            FontSize="18"
                            HorizontalOptions="Center" />
-                </StackLayout> 
-                
+                </StackLayout>
+
                 <!-- Creator 5 -->
                 <StackLayout>
                     <Image Source="luke.png"
                            HeightRequest="100"
                            WidthRequest="100"
                            HorizontalOptions="Center" />
-                    <Label Text="Luke"
+                    <Label Text="Luke" TextColor="#006838"
                            FontSize="18"
                            HorizontalOptions="Center" />
                 </StackLayout>
@@ -80,10 +98,11 @@
                            HeightRequest="100"
                            WidthRequest="100"
                            HorizontalOptions="Center" />
-                    <Label Text="Simbonile"
+                    <Label Text="Simbonile" TextColor="#006838"
                            FontSize="18"
                            HorizontalOptions="Center" />
                 </StackLayout>
+<<<<<<< HEAD
 
 
 
@@ -91,21 +110,37 @@
 
                 <!-- Vision Section -->
             <Frame BackgroundColor="Black"
+=======
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Vision Section -->
+        <Frame BackgroundColor="Black"
+>>>>>>> c1d00ce92c043daf40563a905076f87703029851
                    CornerRadius="10"
                    Margin="0,40,0,0"
                    Padding="20">
+            <StackLayout>
+                <Image Source="aboutusbg.png"/>
                 <Label Text="Our Vision"
                        FontSize="22"
                        FontAttributes="Bold"
                        TextColor="White"
                        HorizontalOptions="Center"
                        Margin="0,0,0,10" />
-            </Frame>
-            <Frame>
                 <Label Text="At iGadi Yami, our vision is to empower subsistence farmers for a sustainable future by addressing hunger through agriculture. We understand the challenges of South Africa's agricultural landscape and the critical role of subsistence farming in ensuring food security. However, these farmers face barriers to sustainability and prosperity. Our mission is clear: revolutionizing subsistence farming for a hunger-free future."
                        TextColor="White"
+<<<<<<< HEAD
                        FontSize="16" />
             </Frame>
             </StackLayout>
           </ScrollView>
+=======
+                       FontSize="16" 
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,10"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+>>>>>>> c1d00ce92c043daf40563a905076f87703029851
 </ContentPage>
