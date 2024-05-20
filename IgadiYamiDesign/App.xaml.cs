@@ -7,11 +7,11 @@ namespace IgadiYamiDesign
         public App()
         {
             InitializeComponent();
-            MainPage = new StartPage();
+           // MainPage = new StartPage();
             // Set the theme based on system settings
             App.Current.UserAppTheme = App.Current.RequestedTheme;
 
-            MainPage = new StartPage();
+            MainPage = new AboutUs();
            // MainPage = new NavigationPage(new AboutUs());
         }
     }

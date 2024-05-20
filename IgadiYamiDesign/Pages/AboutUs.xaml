@@ -4,11 +4,14 @@
              x:Class="IgadiYamiDesign.Pages.AboutUs"
              BackgroundColor="White">
     
-    <ScrollView>
+        <ScrollView >
+        
+        
         <StackLayout Padding="20">
+            
 
-            <!-- Title -->
-            <Label Text="Meet the creators of Igadi Yami"
+                <!-- Title -->
+                  <Label Text="Meet the creators of Igadi Yami"
                    FontSize="24"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
@@ -16,10 +19,7 @@
                    Margin="0,20,0,20" />
 
             <!-- Creators Section -->
-            <StackLayout Orientation="Horizontal"
-                         HorizontalOptions="Center"
-                         Spacing="20">
-                <!-- Creator 1 -->
+                
                 <StackLayout>
                     <Image Source="buhle.png"
                            HeightRequest="100"
@@ -31,7 +31,7 @@
                 </StackLayout>
 
                 <!-- Creator 2 -->
-                <StackLayout>
+                <StackLayout >
                     <Image Source="bandile.png"
                            HeightRequest="100"
                            WidthRequest="100"
@@ -73,7 +73,7 @@
                            FontSize="18"
                            HorizontalOptions="Center" />
                 </StackLayout>
-                
+
                 <!-- Creator 6 -->
                 <StackLayout>
                     <Image Source="simbonile.png"
@@ -83,10 +83,13 @@
                     <Label Text="Simbonile"
                            FontSize="18"
                            HorizontalOptions="Center" />
-                </StackLayout>
-            </StackLayout>
+                <StackLayout/>
 
-            <!-- Vision Section -->
+
+
+
+
+                <!-- Vision Section -->
             <Frame BackgroundColor="Black"
                    CornerRadius="10"
                    Margin="0,40,0,0"

@@ -4,7 +4,8 @@
              x:Class="IgadiYamiDesign.Pages.SettingsPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
     <ScrollView>
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start" Padding="20">
+        <Grid>
+            <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start" Padding="20">
 
             <!-- Profile Section -->
             <Frame BackgroundColor="#FFFFFF" CornerRadius="20" Padding="20">
@@ -33,12 +34,12 @@
                     <Label Text="Dark Mode" VerticalOptions="Center" />
                     <Switch Toggled="OnDarkModeToggled" VerticalOptions="Center" />
                 </HorizontalStackLayout>
-                <Button Text="Premium Tab" Clicked="OnPremiumTabClicked" />
-                <Button Text="FAQ (Chat bot)" Clicked="OnFAQClicked" />
-                <Button Text="Help (chat bot)" Clicked="OnHelpClicked" />
+                    <Button Text="Try Premium" Clicked="OnPremiumTabClicked" />
+   
                 <Button Text="About us" Clicked="OnAboutUsClicked" />
                 <Button Text="Terms and Conditions" Clicked="OnTermsAndConditionsClicked" />
             </VerticalStackLayout>
         </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>

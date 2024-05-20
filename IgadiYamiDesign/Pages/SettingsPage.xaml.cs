@@ -10,7 +10,7 @@ public partial class SettingsPage : ContentPage
         bool isDarkMode = App.Current.RequestedTheme == AppTheme.Dark;
         // Find the switch in the layout and set its state
         var darkModeSwitch = this.FindByName<Switch>("DarkModeSwitch");
-        darkModeSwitch.IsToggled = isDarkMode;
+       // darkModeSwitch.IsToggled = isDarkMode;
     }
 
     private async void OnEditProfileClicked(object sender, EventArgs e)
