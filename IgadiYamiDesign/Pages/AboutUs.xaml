@@ -7,7 +7,7 @@
         <ScrollView >
         
         
-        <StackLayout Padding="20">
+           <StackLayout Padding="20">
             
 
                 <!-- Title -->
@@ -83,7 +83,7 @@
                     <Label Text="Simbonile"
                            FontSize="18"
                            HorizontalOptions="Center" />
-                <StackLayout/>
+                </StackLayout>
 
 
 
@@ -106,6 +106,6 @@
                        TextColor="White"
                        FontSize="16" />
             </Frame>
-        </StackLayout>
-    </ScrollView>
+            </StackLayout>
+          </ScrollView>
 </ContentPage>
