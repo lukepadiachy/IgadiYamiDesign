@@ -1,18 +1,12 @@
+
 namespace IgadiYamiDesign.Pages;
 
-public partial class SettingsPage : ContentPage
+public partial class SettingsV2 : ContentPage
 {
-    public SettingsPage()
-    {
-        InitializeComponent();
-
-        // Initialize the switch state based on the current theme
-        bool isDarkMode = App.Current.RequestedTheme == AppTheme.Dark;
-        // Find the switch in the layout and set its state
-        var darkModeSwitch = this.FindByName<Switch>("DarkModeSwitch");
-        //darkModeSwitch.IsToggled = isDarkMode;
-    }
-
+	public SettingsV2()
+	{
+		InitializeComponent();
+	}
     private async void OnEditProfileClicked(object sender, EventArgs e)
     {
         // Handle Edit profile click event
@@ -37,29 +31,15 @@ public partial class SettingsPage : ContentPage
         await DisplayAlert("Help", "Help clicked", "OK");
     }
 
-    private async void OnAboutUsClicked(object sender, EventArgs e)
+    private async Task OnAboutUsClickedAsync(object sender, EventArgs e)
     {
         // Handle About Us click event that routes to the about us page
-        await Navigation.PushAsync(new AboutUs());
+        await DisplayAlert("About Us", "About Us clicked", "OK");
     }
 
     private async void OnTermsAndConditionsClicked(object sender, EventArgs e)
     {
         // Handle Terms and Conditions click event
         await DisplayAlert("Terms and Conditions", "Terms and conditions clicked", "OK");
-    }
-
-    private void OnDarkModeToggled(object sender, ToggledEventArgs e)
-    {
-        if (e.Value)
-        {
-            // Set Dark Mode
-            App.Current.UserAppTheme = AppTheme.Dark;
-        }
-        else
-        {
-            // Set Light Mode
-            App.Current.UserAppTheme = AppTheme.Light;
-        }
     }
 }

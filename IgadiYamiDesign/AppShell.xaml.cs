@@ -1,4 +1,6 @@
-﻿namespace IgadiYamiDesign
+﻿using IgadiYamiDesign.Pages;
+
+namespace IgadiYamiDesign
 {
     public partial class AppShell : Shell
     {
