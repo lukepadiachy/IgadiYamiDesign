@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IgadiYamiDesign.Pages.AboutUs"
              BackgroundColor="White">
+<<<<<<< Updated upstream
 
 	
     <ScrollView>
@@ -12,21 +13,46 @@
         <!-- Title -->
         <Label Text="Meet the creators of Igadi Yami"
                    FontSize="24"
+=======
+    
+ <ScrollView>
+        
+        
+      <StackLayout Padding="20">
+
+
+
+              <StackLayout Padding="20">
+                <!-- Title -->
+                <Label Text="Meet the creators of Igadi Yami"
+                        FontSize="24"
+>>>>>>> Stashed changes
                    TextColor="#006838"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
                    VerticalOptions="Start"
                    Margin="0,20,0,20" />
+              </StackLayout>
+
+
 
             <!-- Creators Section -->
+<<<<<<< Updated upstream
                 
 
         <!-- Creators Section -->
         <ScrollView Orientation="Horizontal">
+=======
+
+>>>>>>> Stashed changes
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="Center"
                          Spacing="20">
                 <!-- Creator 1 -->
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
                 <StackLayout>
                     <Image Source="buhle.png"
                            HeightRequest="100"
@@ -91,6 +117,7 @@
                            FontSize="18"
                            HorizontalOptions="Center" />
                 </StackLayout>
+<<<<<<< Updated upstream
 							</StackLayout>
        </ScrollView>
 
@@ -104,11 +131,21 @@
            
                 <Image Source="aboutusbg.png"/>
                 <Label Text="Our Vision"
+=======
+
+            </StackLayout>
+
+
+            <Frame BackgroundColor="Black" CornerRadius="10" Margin="0,40,0,0"  Padding="20">
+                    <!-- Source="aboutusbg.png" -->
+                    <Label Text="Our Vision"
+>>>>>>> Stashed changes
                        FontSize="22"
                        FontAttributes="Bold"
                        TextColor="White"
                        HorizontalOptions="Center"
                        Margin="0,0,0,10" />
+<<<<<<< Updated upstream
 		</Frame>
 		<Frame BackgroundColor="Black"
 				   CornerRadius="10"
@@ -123,4 +160,22 @@
             </Frame>
           
  </ScrollView>
+=======
+                </Frame>
+
+            <Frame BackgroundColor="Black" CornerRadius="10" Margin="0,20,0,0"  Padding="20">
+
+                <Label Text="At iGadi Yami, our vision is to empower subsistence farmers for a sustainable future by addressing hunger through agriculture. We understand the challenges of South Africa's agricultural landscape and the critical role of subsistence farming in ensuring food security. However, these farmers face barriers to sustainability and prosperity. Our mission is clear: revolutionizing subsistence farming for a hunger-free future."
+                       TextColor="White"
+                        FontSize="16" 
+                        HorizontalOptions="Center"
+                        Margin="0,0,0,10"/>
+
+            </Frame>
+
+        </StackLayout>
+            
+       </ScrollView>
+     
+>>>>>>> Stashed changes
 </ContentPage>
