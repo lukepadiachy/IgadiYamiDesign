@@ -61,6 +61,7 @@
 	  <None Remove="Resources\Images\google.png" />
 	  <None Remove="Resources\Images\igadiimage.png" />
 	  <None Remove="Resources\Images\microsoft.png" />
+	  <None Remove="Resources\Images\ndosi.png" />
 	  <None Remove="Resources\Images\pic1.jpg" />
 	  <None Remove="Resources\Images\pic2.jpg" />
 	  <None Remove="Resources\Images\pic3.jpg" />
@@ -88,13 +89,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+<<<<<<< HEAD
 	  <MauiXaml Update="Pages\CreatAccount.xaml">
+=======
+	  <MauiXaml Update="Pages\EditProfilePage.xaml">
+>>>>>>> 6950658b586fa8a4f8d312810841ba4bc1a3de04
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\MainMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\SettingsV2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\SignupPage.xaml">
