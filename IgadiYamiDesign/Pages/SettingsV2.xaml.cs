@@ -3,7 +3,7 @@ namespace IgadiYamiDesign.Pages;
 
 public partial class SettingsV2 : ContentPage
 {
-	public SettingsV2()
+	/*public SettingsV2()
 	{
 		InitializeComponent();
 	}
@@ -40,6 +40,6 @@ public partial class SettingsV2 : ContentPage
     private async void OnTermsAndConditionsClicked(object sender, EventArgs e)
     {
         // Handle Terms and Conditions click event
-        await DisplayAlert("Terms and Conditions", "Terms and conditions clicked", "OK");
-    }
+        await DisplayAlert("Terms and Conditions", "Terms and conditions clicked", "OK");*/
+    
 }

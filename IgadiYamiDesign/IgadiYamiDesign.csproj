@@ -89,11 +89,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-<<<<<<< HEAD
-	  <MauiXaml Update="Pages\CreatAccount.xaml">
-=======
+
+	 
 	  <MauiXaml Update="Pages\EditProfilePage.xaml">
->>>>>>> 6950658b586fa8a4f8d312810841ba4bc1a3de04
+
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\MainMenu.xaml">
