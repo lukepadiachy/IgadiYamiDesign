@@ -55,26 +55,21 @@
                 <Label Text="or" Margin="0,10,0,0" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="mont" TextColor="#006838" HorizontalTextAlignment="Center" FontSize="13" Grid.Row="4" />
 
 
-                <StackLayout Padding="10" Grid.Row="5" Spacing="1" >
+                <StackLayout Padding="10" Grid.Row="6" Spacing="1">
+                    <Frame CornerRadius="10" WidthRequest="330" HeightRequest="60" Padding="5" Margin="10" BackgroundColor="#006838">
+                        <Entry x:Name="emailEntry" Placeholder="Email" TextColor="White" BackgroundColor="Transparent" FontFamily="mont" FontSize="15" />
+                    </Frame>
 
                     <Frame CornerRadius="10" WidthRequest="330" HeightRequest="60" Padding="5" Margin="10" BackgroundColor="#006838">
-                        <Button FontFamily="mont" Text="Login with Email Addresss" BackgroundColor="#006838" FontSize="15" FontAttributes="Bold" />
+                        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" TextColor="White" BackgroundColor="Transparent" FontFamily="mont" FontSize="15" />
                     </Frame>
-
-                    <Frame CornerRadius="10"  WidthRequest="330"  Padding="8" HeightRequest="60" Margin="10" BackgroundColor="#006838" >
-                        <Button FontFamily="mont" Text="Password" BackgroundColor="#006838" FontSize="15" FontAttributes="Bold" />
-                    </Frame>
-
                 </StackLayout>
-                <Button Clicked="Login_Clicked" CornerRadius="40" Text="Log In" Grid.Row="6" FontAttributes="Bold" FontFamily="mont" BackgroundColor="#006838" TextColor="White" WidthRequest="200" HeightRequest="55" Margin="0,0,0,50"  />
 
-                <Button Grid.Row="7" BackgroundColor="Transparent" Margin="0,10,0,0"
-                    Text="Forgot Your Password?"
-                       FontAttributes="Bold"
-                     FontFamily="mont"
-                      VerticalOptions="End" 
-                        HorizontalOptions="Center"
-                          TextColor="#006838"/>
+                <Button Clicked="Login_Clicked" CornerRadius="40" Text="Log In" Grid.Row="7" FontAttributes="Bold" FontFamily="mont" BackgroundColor="#006838" TextColor="White" WidthRequest="200" HeightRequest="55" Margin="0,0,0,50" />
+
+                <Button Grid.Row="8" BackgroundColor="Transparent" Margin="0,10,0,0"
+                        Text="Forgot Your Password?" FontAttributes="Bold" FontFamily="mont" VerticalOptions="End"
+                        HorizontalOptions="Center" TextColor="#006838" />
 
             </Grid>
         </VerticalStackLayout>

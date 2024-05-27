@@ -2,13 +2,28 @@ namespace IgadiYamiDesign.Pages;
 
 public partial class LoginPage : ContentPage
 {
-	public LoginPage()
-	{
-		InitializeComponent();
-	}
-    private void Login_Clicked(object sender, EventArgs e)
+    private const string HardcodedEmail = "test@example.com";
+    private const string HardcodedPassword = "password123";
+
+    public LoginPage()
     {
-        Navigation.PushModalAsync(new TomatoeView());
+        InitializeComponent();
     }
 
+    private async void Login_Clicked(object sender, EventArgs e)
+    {
+        string email = emailEntry.Text;
+        string password = passwordEntry.Text;
+
+        if (email == HardcodedEmail && password == HardcodedPassword)
+        {
+            await DisplayAlert("Login Success", "You have successfully logged in.", "OK");
+            await Navigation.PushModalAsync(new MainMenu());
+        }
+        else
+        {
+            await DisplayAlert("Login Failed", "Incorrect email or password. Please try again.", "OK");
+        }
+
+    }
 }

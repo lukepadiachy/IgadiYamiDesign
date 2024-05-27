@@ -11,7 +11,7 @@ namespace IgadiYamiDesign
           
 
             InitializeComponent();
-            MainPage = new TomatoeView();
+            MainPage = new LoginPage();
             // Set the theme based on system settings
           //  App.Current.UserAppTheme = App.Current.RequestedTheme;
 
