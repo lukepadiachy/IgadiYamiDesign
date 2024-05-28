@@ -11,7 +11,7 @@ namespace IgadiYamiDesign
           
 
             InitializeComponent();
-            MainPage = new LoginPage();
+            MainPage = new ProfilePage();
             // Set the theme based on system settings
           //  App.Current.UserAppTheme = App.Current.RequestedTheme;
 
