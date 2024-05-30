@@ -57,7 +57,7 @@
                 </StackLayout>
 
                 <!-- Message from user 2 -->
-                <StackLayout Orientation="Vertical" Margin="10,0,10,10" HorizontalOptions="End">
+                <StackLayout Orientation="Vertical" Margin="10,0,10,10" HorizontalOptions="End" x:Name="Test">
                     <Label Text="Batman" FontSize="12" TextColor="Gray" HorizontalTextAlignment="End" />
                     <Frame CornerRadius="20" BackgroundColor="#006838" HorizontalOptions="End" VerticalOptions="Start">
                         <StackLayout Orientation="Horizontal" Padding="10">
@@ -90,21 +90,21 @@
             <Frame Grid.Column="0"
                    CornerRadius="20"
                    BorderColor="#E0E0E0"
-                   BackgroundColor="#F5F5F5"
+                   BackgroundColor="#59C223"
                    Padding="5"
-                   Margin="0,0,10,0">
+                   Margin="5,0,10,5">
                 <Entry Placeholder="Type a message"
+                       PlaceholderColor="White"
                        FontSize="16"
                        BackgroundColor="Transparent"
-                       Margin="10,0" />
+                       Margin="10,0,0,0" />
             </Frame>
-            <Button Grid.Column="1"
-                    Text="Send"
-                    BackgroundColor="#075E54"
-                    TextColor="White"
-                    FontSize="24"
+            <ImageButton Grid.Column="1"
+                    Source="dm.png"
+                    HeightRequest="55"
+                    WidthRequest="55"
                     CornerRadius="10"
-                    Margin="0,0,0,0" />
+                    Margin="0,0,4,0" Clicked="ImageButton_Clicked"/>
         </Grid>
     </Grid>
 </ContentPage>

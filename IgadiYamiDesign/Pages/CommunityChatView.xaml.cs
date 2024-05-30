@@ -6,4 +6,11 @@ public partial class CommunityChatView : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void ImageButton_Clicked(object sender, EventArgs e)
+    {
+		Test.IsVisible = false;
+
+		
+    }
 }
