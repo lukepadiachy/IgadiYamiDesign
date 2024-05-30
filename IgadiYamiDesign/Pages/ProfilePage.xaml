@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IgadiYamiDesign.Pages.ProfilePage"
+             Title="ProfilePage" 
+             Background="#006838">
+  
+    
+    
+    <Grid   >
+
+        <Grid.RowDefinitions >
+
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+          
+         
+        </Grid.RowDefinitions>
+
+            <!-- Profile Picture -->
+        <Frame Grid.Row="0" WidthRequest="150" HeightRequest="150" CornerRadius="150" Margin="0,0,0,0">
+            <Image Grid.Row="0" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" Source="ndosi.png" />
+        </Frame>
+
+        <StackLayout Grid.Row="1" Margin="0,0,0,0">
+            <Label  Text="Ndosi" FontSize="20" HorizontalOptions="Center" FontFamily="mont" FontAttributes="Bold" TextColor="Black"   />
+            </StackLayout>
+
+        <Frame  Grid.Row="2" HeightRequest="50" Margin="0,0,0,0"  WidthRequest="250" BackgroundColor="White" CornerRadius="30" Padding="0,0,0,0" >
+            <Button Text="Faka lento uyifunayo" FontSize="15" FontFamily="mont" FontAttributes="Bold" TextColor="Black" BackgroundColor="#F9FFE0" />
+        </Frame >
+
+        <!-- Name and Location -->
+        <StackLayout HorizontalOptions="Center" Grid.Row="3" Spacing="15" Margin="0,0,0,0">
+            <Frame  HeightRequest="50" WidthRequest="250" BackgroundColor="White" CornerRadius="30" Padding="0,0,0,0" >
+                <Button Text="Faka lento uyifunayo" FontSize="15" FontFamily="mont" FontAttributes="Bold" TextColor="Black"  BackgroundColor="#F9FFE0" />
+            </Frame >
+            
+            <Frame  HeightRequest="50" WidthRequest="250" BackgroundColor="White" CornerRadius="30" Padding="0,0,0,0" >
+                <Button Text="Faka lento uyifunayo" FontSize="15" FontFamily="mont" FontAttributes="Bold" TextColor="Black"  BackgroundColor="#F9FFE0" />
+            </Frame >
+
+
+            <Frame HeightRequest="50" WidthRequest="250" BackgroundColor="White" CornerRadius="30" Padding="0,0,0,0" >
+                <Button Text="Faka lento uyifunayo" FontSize="15" FontFamily="mont" FontAttributes="Bold" TextColor="Black" BackgroundColor="#F9FFE0" />
+            </Frame >
+
+            <Frame  HeightRequest="50" WidthRequest="250" BackgroundColor="White" CornerRadius="30" Padding="0,0,0,0" >
+                <Button Text="Faka lento uyifunayo" FontSize="15" FontFamily="mont" FontAttributes="Bold" TextColor="Black"  BackgroundColor="#F9FFE0" />
+            </Frame >
+
+            <Frame  HeightRequest="50" WidthRequest="250" BackgroundColor="White" CornerRadius="30" Padding="0,0,0,0" >
+                <Button Text="Faka lento uyifunayo" FontSize="15" FontFamily="mont" FontAttributes="Bold" TextColor="Black"  BackgroundColor="#F9FFE0" />
+            </Frame >
+
+        </StackLayout>
+
+
+    <!-- Description -->
+     
+    </Grid>
+</ContentPage>
